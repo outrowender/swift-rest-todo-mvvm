@@ -11,7 +11,7 @@ import SwiftUI
 struct Todo_MVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TasksView()
         }
     }
 }

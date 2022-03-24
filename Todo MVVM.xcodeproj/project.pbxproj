@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD53B49527EBDBC5007A0318 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53B49427EBDBC5007A0318 /* TaskRow.swift */; };
+		DD53B49727EBF135007A0318 /* TaskInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53B49627EBF135007A0318 /* TaskInput.swift */; };
+		DD53B49927EC9E1C007A0318 /* TasksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53B49827EC9E1C007A0318 /* TasksApi.swift */; };
+		DDB45B6227ED05A1000DE80C /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = DDB45B6127ED05A1000DE80C /* tasks.json */; };
 		DDE502D527EBB04C00018143 /* Todo_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE502D427EBB04C00018143 /* Todo_MVVMApp.swift */; };
-		DDE502D727EBB04C00018143 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE502D627EBB04C00018143 /* ContentView.swift */; };
 		DDE502D927EBB05100018143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE502D827EBB05100018143 /* Assets.xcassets */; };
 		DDE502DC27EBB05100018143 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE502DB27EBB05100018143 /* Preview Assets.xcassets */; };
+		DDE502E627EBB30F00018143 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE502E527EBB30F00018143 /* TaskModel.swift */; };
+		DDE502E827EBB5BE00018143 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE502E727EBB5BE00018143 /* TaskViewModel.swift */; };
+		DDE502EA27EBB91D00018143 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE502E927EBB91D00018143 /* TasksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD53B49427EBDBC5007A0318 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		DD53B49627EBF135007A0318 /* TaskInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInput.swift; sourceTree = "<group>"; };
+		DD53B49827EC9E1C007A0318 /* TasksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksApi.swift; sourceTree = "<group>"; };
+		DDB45B5F27ECEBD7000DE80C /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		DDB45B6127ED05A1000DE80C /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		DDE502D127EBB04C00018143 /* Todo MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE502D427EBB04C00018143 /* Todo_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_MVVMApp.swift; sourceTree = "<group>"; };
-		DDE502D627EBB04C00018143 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DDE502D827EBB05100018143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDE502DB27EBB05100018143 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDE502E527EBB30F00018143 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		DDE502E727EBB5BE00018143 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		DDE502E927EBB91D00018143 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDB45B6027ED0570000DE80C /* db */ = {
+			isa = PBXGroup;
+			children = (
+				DDB45B6127ED05A1000DE80C /* tasks.json */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
 		DDE502C827EBB04C00018143 = {
 			isa = PBXGroup;
 			children = (
+				DDB45B5F27ECEBD7000DE80C /* readme.md */,
+				DDB45B6027ED0570000DE80C /* db */,
 				DDE502D327EBB04C00018143 /* Todo MVVM */,
 				DDE502D227EBB04C00018143 /* Products */,
 			);
@@ -51,8 +74,10 @@
 		DDE502D327EBB04C00018143 /* Todo MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				DDE502E427EBB08300018143 /* Model */,
+				DDE502E327EBB07000018143 /* ViewModel */,
+				DDE502E227EBB06A00018143 /* View */,
 				DDE502D427EBB04C00018143 /* Todo_MVVMApp.swift */,
-				DDE502D627EBB04C00018143 /* ContentView.swift */,
 				DDE502D827EBB05100018143 /* Assets.xcassets */,
 				DDE502DA27EBB05100018143 /* Preview Content */,
 			);
@@ -65,6 +90,33 @@
 				DDE502DB27EBB05100018143 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDE502E227EBB06A00018143 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDE502E927EBB91D00018143 /* TasksView.swift */,
+				DD53B49427EBDBC5007A0318 /* TaskRow.swift */,
+				DD53B49627EBF135007A0318 /* TaskInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDE502E327EBB07000018143 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDE502E727EBB5BE00018143 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDE502E427EBB08300018143 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDE502E527EBB30F00018143 /* TaskModel.swift */,
+				DD53B49827EC9E1C007A0318 /* TasksApi.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +179,7 @@
 			files = (
 				DDE502DC27EBB05100018143 /* Preview Assets.xcassets in Resources */,
 				DDE502D927EBB05100018143 /* Assets.xcassets in Resources */,
+				DDB45B6227ED05A1000DE80C /* tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDE502D727EBB04C00018143 /* ContentView.swift in Sources */,
+				DDE502E627EBB30F00018143 /* TaskModel.swift in Sources */,
+				DDE502E827EBB5BE00018143 /* TaskViewModel.swift in Sources */,
 				DDE502D527EBB04C00018143 /* Todo_MVVMApp.swift in Sources */,
+				DD53B49727EBF135007A0318 /* TaskInput.swift in Sources */,
+				DDE502EA27EBB91D00018143 /* TasksView.swift in Sources */,
+				DD53B49527EBDBC5007A0318 /* TaskRow.swift in Sources */,
+				DD53B49927EC9E1C007A0318 /* TasksApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

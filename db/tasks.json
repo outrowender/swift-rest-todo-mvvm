@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "author": "Wender",
+      "content": "Tarefa que pertence ao Eduardo",
+      "priority": "Low"
+    },
+    {
+      "id": 2,
+      "author": "Patrick",
+      "content": "Tarefa que pertence ao Patrick",
+      "priority": "Low"
+    },
+    {
+      "id": 3,
+      "author": "Marcela",
+      "content": "Tarefa que pertence à Marcela",
+      "priority": "High"
+    },
+    {
+      "id": 4,
+      "author": "Natanael",
+      "content": "Tarefa que pertence ao Natanael",
+      "priority": "Medium"
+    }
+  ]
+}
